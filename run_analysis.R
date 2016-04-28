@@ -30,3 +30,5 @@ cleaned_data = select(all_data,matches('mean()|std()|Activity'))
 ## Group the data and summarise it 
 grouped_data = cleaned_data %>% group_by_('Activity') %>% summarise_each(funs(mean))
 
+write.csv(cleaned_data,'Cleaned_Data.csv')
+write.csv(grouped_data,'Grouped_Data.csv')
