@@ -10,8 +10,8 @@ The Data was extracted from their locations and then bound together to form one 
 
 The feature names were also added as column names for tidyness.  
 Using the dplyr package, the irrelevant columns were dropped from the dataframe.  
-Also using the dplyr package, the separate dataset was created that groups the information by activity and summarises all of the columns, crunching it down to a 6 row dataframe (one for each activity)  
+Also using the dplyr package, the second tidy dataset was created that groups the information by activity and summarises all of the columns, crunching it down to a 180 row dataframe (grouped by both subject and activity)
 
 ## Loading  
 
-For this project, the data wasn't loaded into a database but was simply written out to two CSV files, both of which are located in this repo.  
+For this project, the data wasn't loaded into a database but was simply written out to two *.txt files using 'write.table', both of which are located in this repo.  
